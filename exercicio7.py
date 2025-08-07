@@ -15,12 +15,12 @@ while(opcao != 5):
     quantidade = input("Qual a quantidade?")
     if(opcao == 1):
         valor_total +=  5.00 * float(quantidade)
-    elif(opcao == 2):
+    if(opcao == 2):
         valor_total += 7.00 * float(quantidade)
-    elif(opcao == 3):
+    if(opcao == 3):
         valor_total += 4.00 * float(quantidade)
-    elif(opcao == 4):
+    if(opcao == 4):
         valor_total += 6.00 * float(quantidade)
 
 
-print(f'O valor total do pedido ficou em R${valor_total:.2f}')
+print(valor_total)
