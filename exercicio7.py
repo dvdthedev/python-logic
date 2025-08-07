@@ -9,18 +9,25 @@ opcao = 0
 valor_total = 0
 
 while(opcao != 5):
-    opcao = int(input("Escolha uma opção"))
-    if(opcao == 5):
+    opcao = int(input("Escolha uma opção entre 1 e 5: "))
+
+    while (opcao < 1 or opcao > 5):
+        opcao = int(input("Escolha uma opção entre 1 e 5: "))
+
+    if (opcao == 5):
         break;
-    quantidade = input("Qual a quantidade?")
+
+    quantidade = float(input("Qual a quantidade? "))
     if(opcao == 1):
-        valor_total +=  5.00 * float(quantidade)
+        valor_total +=  5.00 * quantidade
     if(opcao == 2):
-        valor_total += 7.00 * float(quantidade)
+        valor_total += 7.00 * quantidade
     if(opcao == 3):
-        valor_total += 4.00 * float(quantidade)
+        valor_total += 4.00 * quantidade
     if(opcao == 4):
-        valor_total += 6.00 * float(quantidade)
+        valor_total += 6.00 * quantidade
 
-
-print(valor_total)
+if valor_total == False:
+    print('Nenhum valor computado')
+else:
+    print(f'Valor total das vendas: R${valor_total:.2f}')
