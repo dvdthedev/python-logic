@@ -1,2 +1,2 @@
 # python-logic
-Some exercises to pratice what i'm learning in my Computer Sciente graduation.
+Some exercises to practice what i'm learning in my Computer Science college.
